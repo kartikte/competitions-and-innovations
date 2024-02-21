@@ -1,14 +1,21 @@
 /* Basic styles */
-body {
+*,body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 header {
-    background-color: orange;
+    background: linear-gradient(to left bottom, rgb(245, 172, 37),rgb(202, 136, 14));
     color: #fff;
     padding: 20px;
+}
+
+header h1{
+    text-decoration: none;
+    color: white;
 }
 
 nav ul {
@@ -34,11 +41,77 @@ main {
 #competitions {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
+}
+#about-amt p{
+    padding: 15px 35px;
+    padding-top:0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 700px){
+    #competitions{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #competitions .card{
+        width: 80%;
+    }
+    #about-amt {
+        padding: 0;
+
+    }
+    #about-amt p{
+        font-size: 12px;
+        padding: 0px 0px;
+        text-align: justify;
+    }
+    nav  {
+        display: none;
+        margin-right: 20px;
+    }
+    
+}
+#about-amt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+
+#about-amt h2{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(182, 121, 7);
+}
+#about-amt .headingamt{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    color: rgb(78, 61, 31);
+}
+
+#about-amt img{
+    border-radius: 10px;
+    border: 2px solid orange;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 60%;
 }
 
 .card {
     flex: 1;
-    padding: 20px;
+    padding: 28px 20px;
 margin:10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,28 +124,27 @@ color: white;
     transform: translateY(-5px);
 }
 
+.card p {
+    /* padding: 10px; */
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .ai-cup {
-    background-color: #3498db;
+    background-color: #3176a4;
 }
 
 .robo-cup {
-    background-color: #2ecc71;
+    background-color: #308f57;
 }
 
 .amt-innovations {
-    background-color: #e74c3c;
+    background-color: #9c3d32;
 }
 
 .card h2 {
     color: #fff;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
