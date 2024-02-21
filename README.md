@@ -1,3 +1,5 @@
+https://drive.google.com/drive/folders/14u8j4nBwt0KpWXCm3xJeegoZzNGK1TXV?usp=sharing
+
 AI Cup and Robo Cup Competitions:
 
 TE Connectivity's annual AI Cup and Robo Cup competitions provide platforms for students to showcase innovations in AI and robotics, fostering creativity and problem-solving skills while advancing technology in these fields. Here, you can explore the projects submitted by students and innovations by the AMT department, categorized year-wise for easy access to groundbreaking advancements.
