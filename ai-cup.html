@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE Connectivity Competitions</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .competition-info {
+            margin-bottom: 30px;
+        }
+
+        .accordion-btn {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        .panel {
+            display: block;
+            padding: 10px 0;
+        }
+
+        .panel button {
+            padding: 10px 20px;
+            margin-top: 5px;
+            background-color: white; /* Shades of blue */
+            border: 2px solid blue;
+            cursor: pointer;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+		max-width: 150px;
+        }
+
+        .panel button:hover {
+            background-color: #2980b9;
+	color: white;
+ /* Darker shade of blue */
+        }
+
+        footer {
+            background-color: orange;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position:;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TE Connectivity Competitions</h1>
+    </header>
+
+    <main>
+        <!-- AI Cup Section -->
+        <section id="ai-cup" class="competition-section">
+            <div class="competition-info">
+                <h2>AI Cup</h2>
+                <p>TE Connectivity's annual AI Cup provides a platform for students to showcase innovations in AI, fostering creativity and problem-solving skills while advancing technology in this field.</p>
+            </div>
+            <div class="categories">
+                <button class="accordion-btn active">Category 1 </button>
+                <div class="panel" style="display: block;">
+                    <button><a href="#">2023</a></button>
+                    <button><a href="#">2022</a></button>
+                    <button><a href="#">2021</a></button>
+                </div>
+            </div>
+<div class="categories">
+                <button class="accordion-btn active">Category 2 </button>
+                <div class="panel" style="display: block;">
+                    <button><a href="#">2023</a></button>
+                    <button><a href="#">2022</a></button>
+                    <button><a href="#">2021</a></button>
+                </div>
+            </div>
+<div class="categories" style="padding-bottom: 100px">
+                <button class="accordion-btn active">Category 3 </button>
+                <div class="panel" style="display: block;">
+                    <button><a href="#">2023</a></button>
+                    <button><a href="#">2022</a></button>
+                    <button><a href="#">2021</a></button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TE Connectivity. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        var acc = document.getElementsByClassName("accordion-btn");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
